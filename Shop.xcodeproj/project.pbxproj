@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CAD4019125293071006D963F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4019025293071006D963F /* main.swift */; };
+		CAD40199252930C1006D963F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD40198252930C1006D963F /* Product.swift */; };
+		CAD4019C252930D4006D963F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4019B252930D4006D963F /* Shop.swift */; };
+		CAD4019F252930E7006D963F /* ShopsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4019E252930E7006D963F /* ShopsNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		CAD4018D25293071006D963F /* Shop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Shop; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD4019025293071006D963F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CAD40198252930C1006D963F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CAD4019B252930D4006D963F /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		CAD4019E252930E7006D963F /* ShopsNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				CAD4019025293071006D963F /* main.swift */,
+				CAD40198252930C1006D963F /* Product.swift */,
+				CAD4019B252930D4006D963F /* Shop.swift */,
+				CAD4019E252930E7006D963F /* ShopsNetwork.swift */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -119,7 +128,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD4019F252930E7006D963F /* ShopsNetwork.swift in Sources */,
+				CAD4019C252930D4006D963F /* Shop.swift in Sources */,
 				CAD4019125293071006D963F /* main.swift in Sources */,
+				CAD40199252930C1006D963F /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
