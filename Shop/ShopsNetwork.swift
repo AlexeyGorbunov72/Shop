@@ -43,7 +43,7 @@ class Shop{
     var title = ""
     var adres = ""
     var store: [Product] = []
-    private func setUID(){
+    internal func setUID(){
         Shop.globalShopUID += 1
         selfUID = Shop.globalShopUID
     }
