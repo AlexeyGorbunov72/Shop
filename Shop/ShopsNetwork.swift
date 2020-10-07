@@ -7,7 +7,7 @@
 
 import Foundation
 class ShopsNetwork{
-    static fileprivate var shops: [Shop] = []
+    static internal var shops: [Shop] = []
     static func putProductInShop(shopUID: Int, product: Product){
         
     }
