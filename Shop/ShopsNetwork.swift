@@ -38,7 +38,7 @@ class ShopsNetwork{
 }
 
 class Shop{
-    static private var globalShopUID = -1
+    static internal var globalShopUID = -1
     private var selfUID = 0
     var title = ""
     var adres = ""
