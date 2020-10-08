@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA68AD1B252E96E00062578B /* ShopOOP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA68AD17252E95D20062578B /* ShopOOP.framework */; };
+		CA68AD1C252E96E00062578B /* ShopOOP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CA68AD17252E95D20062578B /* ShopOOP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CAD4019125293071006D963F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4019025293071006D963F /* main.swift */; };
-		CAD40199252930C1006D963F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD40198252930C1006D963F /* Product.swift */; };
-		CAD4019C252930D4006D963F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4019B252930D4006D963F /* Shop.swift */; };
-		CAD4019F252930E7006D963F /* ShopsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD4019E252930E7006D963F /* ShopsNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CA68AD1D252E96E00062578B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA68AD1C252E96E00062578B /* ShopOOP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CAD4018B25293071006D963F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -26,11 +36,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA68AD17252E95D20062578B /* ShopOOP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShopOOP.framework; sourceTree = "<group>"; };
 		CAD4018D25293071006D963F /* Shop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Shop; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD4019025293071006D963F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		CAD40198252930C1006D963F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		CAD4019B252930D4006D963F /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
-		CAD4019E252930E7006D963F /* ShopsNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,17 +46,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA68AD1B252E96E00062578B /* ShopOOP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA44E53C252E8B2D001DDEAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA68AD17252E95D20062578B /* ShopOOP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CAD4018425293071006D963F = {
 			isa = PBXGroup;
 			children = (
 				CAD4018F25293071006D963F /* Shop */,
 				CAD4018E25293071006D963F /* Products */,
+				CA44E53C252E8B2D001DDEAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,9 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				CAD4019025293071006D963F /* main.swift */,
-				CAD40198252930C1006D963F /* Product.swift */,
-				CAD4019B252930D4006D963F /* Shop.swift */,
-				CAD4019E252930E7006D963F /* ShopsNetwork.swift */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -81,6 +96,7 @@
 				CAD4018925293071006D963F /* Sources */,
 				CAD4018A25293071006D963F /* Frameworks */,
 				CAD4018B25293071006D963F /* CopyFiles */,
+				CA68AD1D252E96E00062578B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD4019F252930E7006D963F /* ShopsNetwork.swift in Sources */,
-				CAD4019C252930D4006D963F /* Shop.swift in Sources */,
 				CAD4019125293071006D963F /* main.swift in Sources */,
-				CAD40199252930C1006D963F /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +202,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -244,6 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/lib";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -259,6 +274,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62MNR2QKFT;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -270,6 +289,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62MNR2QKFT;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

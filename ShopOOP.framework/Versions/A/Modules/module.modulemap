@@ -1,0 +1,11 @@
+framework module ShopOOP {
+  umbrella header "ShopOOP.h"
+
+  export *
+  module * { export * }
+}
+
+module ShopOOP.Swift {
+    header "ShopOOP-Swift.h"
+    requires objc
+}
